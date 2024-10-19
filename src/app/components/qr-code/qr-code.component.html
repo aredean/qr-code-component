@@ -1,0 +1,31 @@
+<div class="qr-code-content card-shadow">
+    <div class="qr-code-image">
+      <!-- <img src="./images/image-qr-code.png" alt="QR Code" /> -->
+      <img  id="qrImage" [src]="qrcode()" alt="QR Code">
+      <div class="qr-code-image-ornament-1">
+      </div>
+      <div class="qr-code-image-ornament-2">
+      </div>
+    </div>
+    <div class="qr-code-text">
+      <h4 class="qr-code-text-title text-preset-1">
+        @if(title()){
+            {{ title() }}
+        } @else {
+            Improve your front-end skills by building projects
+        }
+      </h4>
+      <div class="qr-code-text-subtitle text-preset-2">
+        @if(subtitle()){
+            {{ subtitle() }}
+        } @else {
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        }
+      </div>
+
+      <!-- <button [hidden]="editToggle" (click)="toggleEdit()" class="qr-code-edit-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+      </button> -->
+
+    </div>
+  </div>
