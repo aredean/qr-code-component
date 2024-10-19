@@ -47,7 +47,7 @@ export class QrCodeComponent {
   }
 
   ngOnInit(){
-    this.generateQR('https://github.com/aredean');
+    this.generateQR('https://www.frontendmentor.io/');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
