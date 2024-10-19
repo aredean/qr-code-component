@@ -177,3 +177,13 @@ input:focus {
     top: -6px;
     right:-6px;
 }
+
+.qr-code-component {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .qr-code-component {
+        display: grid;
+    }
+}
